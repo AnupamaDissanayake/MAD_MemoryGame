@@ -8,6 +8,9 @@ import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
+/**
+ * Created by Randhir Muhandiramge on 6/2/2017.
+ */
 
 public class PlayOrExit extends Activity {
 

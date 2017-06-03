@@ -12,7 +12,9 @@ import android.widget.TextView;
 
 import java.util.Timer;
 import java.util.TimerTask;
-
+/**
+ * Created by Rajitha Shavinda on 6/1/2017.
+ */
 
 public class MainActivity extends Activity {
 
@@ -47,13 +49,15 @@ public class MainActivity extends Activity {
         tv_Score =(TextView) findViewById(R.id.textView);
         tv_Time =(TextView) findViewById(R.id.textView2);
 
-
+        //--------------------Star(Images) in star layout---------------------------------------------//
         star1 =(ImageView) findViewById(R.id.star1);
         star2 =(ImageView) findViewById(R.id.star2);
         star3=(ImageView) findViewById(R.id.star3);
         star4=(ImageView) findViewById(R.id.star4);
         star5=(ImageView) findViewById(R.id.star5);
 
+
+        //----------------------Image Views in Image layout------------------------------------------//
         iv1=(ImageView) findViewById(R.id.image_view_1);
         iv2=(ImageView) findViewById(R.id.image_view_2);
         iv3=(ImageView) findViewById(R.id.image_view_3);
@@ -67,6 +71,8 @@ public class MainActivity extends Activity {
         iv11=(ImageView) findViewById(R.id.image_view_11);
         iv12=(ImageView) findViewById(R.id.image_view_12);
 
+
+        //--------------------set Tag for identify the image view------------------------//
         iv1.setTag("0");
         iv2.setTag("1");
         iv3.setTag("2");
@@ -79,13 +85,11 @@ public class MainActivity extends Activity {
         iv10.setTag("9");
         iv11.setTag("10");
         iv12.setTag("11");
-
+        //-------------------------------------------------------------------------//
 
         showImgFront(); //line No 375
 
         imageSet.shuffleArr(); //ArrayObjectClass Private method
-
-        //tv_Score.setTextColor(Color.GRAY);
 
 
         iv1.setOnClickListener(new View.OnClickListener() {
